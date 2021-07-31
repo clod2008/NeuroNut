@@ -1,0 +1,261 @@
+:root {
+    --blue: #00a990 !important;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #00a990 !important;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+:target:before {
+    content: "";
+    display: block;
+    height: 200px;
+    margin: -150px 0 0;
+  }
+
+
+.btn-primary:hover {
+  background-color: #6c757d !important;
+}
+    
+.navbar-brand {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    /* background: #ffffff; */
+    padding: 0 20px;
+    /* background: #dcdfce;
+    background: -moz-linear-gradient(-45deg, #ddd2a4 0%, #ffffff 100%)!important;
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, #dcdfce), color-stop(100%, #ffffff)) !important;
+    background: -webkit-linear-gradient(-45deg, #dcdfce 0%, #ffffff 100%) !important;
+    background: -o-linear-gradient(-45deg, #dcdfce 0%, #ffffff 100%) !important;
+    background: -ms-linear-gradient(-45deg, #dcdfce 0%, #ffffff 100%) !important;
+    background: -webkit-linear-gradient(315deg, #dcdfce 0%, #ffffff 100%) !important;
+    background: -o-linear-gradient(315deg, #dcdfce 0%, #ffffff 100%) !important;
+    background: linear-gradient(135deg, #dcdfce 0%, #ffffff 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdfce', endColorstr='#ffffff', GradientType=1 ) !important; } */
+    background-color: transparent !important;
+    background: transparent;
+  }
+
+  
+    #section-counter {
+        position: relative;
+        z-index: 0;
+        background-attachment: fixed; }
+        #section-counter .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          content: '';
+          z-index: -1;
+          opacity: .8;
+          background: #000000;
+          background: #00a990;
+          background: -moz-linear-gradient(-45deg, #00a990 0%, #fe7306 100%) !important;
+          background: -webkit-gradient(left top, right bottom, color-stop(0%, #00a990), color-stop(100%, #fe7306)) !important;
+          background: -webkit-linear-gradient(-45deg, #00a990 0%, #fe7306 100%) !important;
+          background: -o-linear-gradient(-45deg, #00a990 0%, #fe7306 100%) !important;
+          background: -ms-linear-gradient(-45deg, #00a990 0%, #fe7306 100%) !important;
+          background: -webkit-linear-gradient(315deg, #00a990 0%, #fe7306 100%) !important;
+          background: -o-linear-gradient(315deg, #00a990 0%, #fe7306 100%) !important;
+          background: linear-gradient(135deg, #00a990 0%, #fe7306 100%) !important;
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a990', endColorstr='#fe7306', GradientType=1 ) !important; }
+          .ftco-footer {
+            font-size: 16px;
+            padding: 7em 0;
+            z-index: 0;
+            background: #00a990 !important;
+            background: -moz-linear-gradient(-45deg, #00a990 0%, #fe7306 100%) !important;
+            background: -webkit-gradient(left top, right bottom, color-stop(0%, #00a990), color-stop(100%, #fe7306)) !important;
+            background: -webkit-linear-gradient(-45deg, #00a990 0%, #fe7306 100%) !important;
+            background: -o-linear-gradient(-45deg, #00a990 0%, #fe7306 100%) !important;
+            background: -ms-linear-gradient(-45deg, #00a990 0%, #fe7306 100%) !important;
+            background: -webkit-linear-gradient(315deg, #00a990 0%, #fe7306 100%) !important;
+            background: -o-linear-gradient(315deg, #00a990 0%, #fe7306 100%) !important;
+            background: linear-gradient(135deg, #00a990 0%, #fe7306 100%) !important;
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a990', endColorstr='#fe7306', GradientType=1 ) !important; }
+            .ftco-footer .ftco-footer-logo {
+              text-transform: uppercase;
+              letter-spacing: .1em; }
+            .ftco-footer .ftco-footer-widget h2 {
+              font-weight: normal;
+              color: #fff;
+              margin-bottom: 40px;
+              font-size: 18px;
+              font-weight: 600; }
+            .ftco-footer .ftco-footer-widget ul li a {
+              color: rgba(255, 255, 255, 0.8); }
+              .ftco-footer .ftco-footer-widget ul li a span {
+                color: rgba(255, 255, 255, 0.1); }
+            .ftco-footer .ftco-footer-widget .btn-primary {
+              background: #fff !important;
+              border: 2px solid #fff !important; }
+              .ftco-footer .ftco-footer-widget .btn-primary:hover {
+                background: #fff;
+                border: 2px solid #fff !important; }
+            .ftco-footer p {
+              color: rgba(255, 255, 255, 0.8); }
+            .ftco-footer a {
+              color: rgba(255, 255, 255, 0.8); }
+              .ftco-footer a:hover {
+                color: #00a990; }
+            .ftco-footer .ftco-heading-2 {
+              font-size: 17px;
+              font-weight: 400;
+              color: #fff; }
+
+.ftco-footer-social li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+  .ftco-footer-social li a:hover {
+      background-color: #6c757d !important;
+      
+    }
+
+              .hero-wrap .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                content: '';
+                opacity: .5;
+                background: rgba(32, 124, 229, 0);
+                background: -moz-linear-gradient(45deg, rgba(32, 124, 229, 0) 0%, rgba(146, 95, 206, 0) 55%, #fe7306 100%);
+                background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(32, 124, 229, 0)), color-stop(55%, rgba(146, 95, 206, 0)), color-stop(100%, #fe7306));
+                background: -webkit-linear-gradient(45deg, rgba(32, 124, 229, 0) 0%, rgba(146, 95, 206, 0) 55%, #fe7306 100%);
+                background: -o-linear-gradient(45deg, rgba(32, 124, 229, 0) 0%, rgba(146, 95, 206, 0) 55%, #fe7306 100%);
+                background: -ms-linear-gradient(45deg, rgba(32, 124, 229, 0) 0%, rgba(146, 95, 206, 0) 55%, #fe7306 100%);
+                background: linear-gradient(45deg, rgba(32, 124, 229, 0) 0%, rgba(146, 95, 206, 0) 55%, #fe7306 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a990', endColorstr='#fe7306', GradientType=1 ); }
+              .hero-wrap.hero-wrap-2 {
+                height: 600px;
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center; }
+                .hero-wrap.hero-wrap-2 .overlay {
+                  width: 100%;
+                  opacity: .3;
+                  background: #fe7306;
+                  background: -moz-linear-gradient(-45deg, #fe7306 0%, #00a990 100%);
+                  background: -webkit-gradient(left top, right bottom, color-stop(0%, #fe7306), color-stop(100%, #00a990));
+                  background: -webkit-linear-gradient(-45deg, #fe7306 0%, #00a990 100%);
+                  background: -o-linear-gradient(-45deg, #fe7306 0%, #00a990 100%);
+                  background: -ms-linear-gradient(-45deg, #fe7306 0%, #00a990 100%);
+                  background: -webkit-linear-gradient(315deg, #fe7306 0%, #00a990 100%);
+                  background: -o-linear-gradient(315deg, #fe7306 0%, #00a990 100%);
+                  background: linear-gradient(135deg, #fe7306 0%, #00a990 100%);
+                  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe7306', endColorstr='#00a990', GradientType=1 ); }
+                
+.hero-wrap.hero-wrap-2 .slider-text {
+                  height: 600px; }
+
+    @media (max-width: 991.98px) {
+        .ftco-navbar-light {
+            background: #ffffff !important;
+            background: -moz-linear-gradient(-45deg, #dcdfce 0%, #ffffff 100%) !important;
+            background: -webkit-gradient(left top, right bottom, color-stop(0%, #dcdfce), color-stop(100%, #ffffff)) !important;
+            background: -webkit-linear-gradient(-45deg, #dcdfce 0%, #ffffff 100%) !important;
+            background: -o-linear-gradient(-45deg, #dcdfce 0%, #ffffff 100%) !important;
+            background: -ms-linear-gradient(-45deg, #dcdfce 0%, #ffffff 100%) !important;
+            background: -webkit-linear-gradient(315deg, #dcdfce 0%, #ffffff 100%) !important;
+            background: -o-linear-gradient(315deg, #dcdfce 0%, #ffffff 100%) !important;
+            background: linear-gradient(135deg, #dcdfce 0%, #ffffff 100%) !important;
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdfce', endColorstr='#ffffff', GradientType=1 ) !important;
+        }  
+
+        .navbar-brand {
+            background: transparent !important; 
+        }
+
+    }
+
+    .slider-text h1{
+        text-shadow: 4px 4px 3px rgba(0,0,0,0.45);
+    }
+    .slider-text p{
+        text-shadow: 4px 4px 3px rgba(0,0,0,0.45);
+    }
+
+    .slider-text .ftco-animate .subheading{
+        text-shadow: 4px 4px 3px rgba(0,0,0,0.45);
+    }
+
+
+    /* Cursos */
+    #PortadaUCDM1 {
+      background-image:url('../images/3d-silhouette-man-with-arms-raised-against-sunset-ocean-landscape.jpg');
+      background-position:bottom;
+      
+    }
+
+    #PortadaUCDM2 {
+      background-image:url('../images/Blanco-y-negro.jpg');
+      background-position:bottom;
+      
+    }
+
+    #PortadaNeuroNut{
+      background-image:url('../images/2728.jpg');
+      background-position:bottom;
+    }
+
+
+
+
+    /* icons */
+    .card i {
+      color: #00a990;
+      margin-bottom: 0.2em;
+    }
+
+    .mercadoPagoImg{
+      min-height: 6em;
+    }
+
+/* post */
+.postContenedor {
+  
+}
+
+/* home */
+#pilares a {
+  text-shadow:5px 5px 5px #000000;
+  font-weight: bold;
+}

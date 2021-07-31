@@ -1,0 +1,34 @@
+{
+    "postNews":[
+        {
+            "news_01":{
+                "autor"     : "Claudio Uccello",
+                "fecha"     : "25/7/2021",
+                "titulo"    : "Nota Uno Json",
+                "imgUrl "   : "images/image_1.jpg",
+                "copete"    : "Texto del copete de la Nota 1",
+                "link"      : "",
+                "textoPpal" : "Acá va el cuerpo del texto de la nota, esta información aparece cuando el usuario preciona el botón de 'Saber Más'."
+                },
+                "news_02":{
+                    "autor"     : "Martin Miadana",
+                    "fecha"     : "27/7/2021",
+                    "titulo"    : "Nota Dos Json",
+                    "imgUrl "   : "images/image_2.jpg",
+                    "copete"    : "Texto del copete de la Nota 2",
+                    "link"      : "",
+                    "textoPpal" : "Acá va el cuerpo del texto de la nota, esta información aparece cuando el usuario preciona el botón de 'Saber Más'."
+                },
+                "news_03":{
+                    "autor"     : "Rosa Almeida",
+                    "fecha"     : "20/7/2021",
+                    "titulo"    : "Nota Tres Json",
+                    "imgUrl "   : "images/image_2.jpg",
+                    "copete"    : "Texto del copete de la Nota 3",
+                    "link"      : "",
+                    "textoPpal" : "Acá va el cuerpo del texto de la nota, esta información aparece cuando el usuario preciona el botón de 'Saber Más'."
+                }
+            }
+        }
+    ]
+}
