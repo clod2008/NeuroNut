@@ -30,6 +30,9 @@ _Data { object }_
     }
 ```
 _Post constructor { class }_
+```js
+    class Post {}
+```
 
 _Post agregarUltimosPost (function)_
 
@@ -55,9 +58,12 @@ _Post agregarUltimosPost (function)_
 
 _Con el objeto de aplicar el mismo código y no arrastrar errores estos JS cosntruyen un único elemento para todas las páginas._
 ```
-bifurcador.js
-footer.js
-hesther.js
+js/navBar.js
+js/forms.js
+js/cursos.js
+js/class/comentarios.js
+js/class/instructor.js
+js/class/post.js
 ```
 
 ---
