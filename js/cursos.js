@@ -5,7 +5,7 @@ const contUCDM1 = {
     title: 'UN CURSO DE MILAGROS <br> NIVEL 1',
     instructor: 'LIC. ROSA DE ALMEIDA',
     id: 'UCDM1',
-    precio: 3000,
+    precio: '$ 3000',
     linkDePago: 'https://clod2008.github.io/NeuroNut/linkDePagoUCDM1.html',
     buttonId: 'linkPago-UCDM1',
     ariaDisabled: false,
@@ -19,7 +19,7 @@ const contUCDM2 = {
     title: 'Un Curso de Milagros<br>Estudiantes avanzados',
     instructor: 'LIC. ROSA DE ALMEIDA',
     id: 'UCDM2',
-    precio: 3500,
+    precio: '$ 3500',
     linkDePago: 'https://clod2008.github.io/NeuroNut/linkDePagoUCDM2.html',
     buttonId: 'linkPago-UCDM2',
     ariaDisabled: false,
@@ -34,7 +34,7 @@ const contNeuro = {
     instructor: 'LIC. ROSA DE ALMEIDA',
     id: 'NeuroNut',
     precio: 'PRÓXIMAMANTE',
-    linkDePago: 'https://clod2008.github.io/NeuroNut/linkDePagoUCDM1.html',
+    linkDePago: 'https://clod2008.github.io/NeuroNut/linkDePagoNeuroNut.html',
     buttonId: 'linkPago-NeuroNut',
     ariaDisabled: true,
     buttonDisable: 'disabled'
@@ -58,7 +58,7 @@ const crearCursoDestacado = (curso)=> {
                 <p class="advisor">Maestra de Dios<br>y Psicoterapeuta del Espíritu<br><span class="">${curso.instructor}</span></p>
                 <ul class="d-flex justify-content-between">
                 <li>Code: ${curso.id}</li>
-                    <li class="price">$ ${curso.precio}</li>
+                    <li class="price">${curso.precio}</li>
                     </ul>
                     </div>
             <div class="d-flex justify-content-center align-items-center">
@@ -83,7 +83,7 @@ const crearCursoDestacado = (curso)=> {
                                         <p class="advisor">Maestra de Dios<br>y Psicoterapeuta del Espíritu<br><span class="">${curso.instructor}</span></p>
                                         <ul class="d-flex justify-content-between">
                                             <li>Code: ${curso.id}</li>
-                                            <li class="price">$ ${curso.precio}</li>
+                                            <li class="price">${curso.precio}</li>
                                         </ul>
                                     </div>
                                     <div class="d-flex justify-content-center align-items-center">
