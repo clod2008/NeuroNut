@@ -127,9 +127,10 @@ const createBy = {
     name: 'APSIS',
     url:  'https://apsis.com.ar'
 };
-const footerData ={
+const contactacData ={
     faceboock: 'https://web.facebook.com/roxy.dealmeida1',
-    instagram: 'https://www.instagram.com/bioneuronutricion/'
+    instagram: 'https://www.instagram.com/bioneuronutricion/',
+    email:      'roxy.966@live.com.ar'
 };
 
 
@@ -141,8 +142,8 @@ footerPlace.append(`
                         <h2 class="ftco-heading-2">Seguinos en nuestras redes</h2>
                         <p>En nuestras cuentas de las redes sociales vas a encontrar todas las novedades y respuestas a tus dudas.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-                            <li><a href="#"><i class="fab fa-instagram fa-2x"></i></span></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f fa-2x"></i></span></a></li>
+                            <li><a href="${contactacData.instagram}" target="_blank"><i class="fab fa-instagram fa-2x"></i></span></a></li>
+                            <li><a href="${contactacData.faceboock}" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -165,8 +166,8 @@ footerPlace.append(`
                                 <li><i class="fas fa-map-marker-alt icon"></i><span class="text">Oldman 704, Loma Verde, Escobar, Buenos Aires, Argentina</span></li>
                                 <li><a href="https://wa.me/5493484365955?text=Me%20interesa%20conocer%20más%20sobre%20los%20cursos"><i class="fab fa-whatsapp icon"></i><span class="text"> +54 9 3484 36-5955
                                             210</span></a></li>
-                                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
-                                            class="text">info@yourdomain.com</span></a></li>
+                                <li><a href="mailto:${contactacData.email}"><span class="icon fa fa-paper-plane"></span><span
+                                            class="text">${contactacData.email}</span></a></li>
                             </ul>
                         </div>
                     </div>
