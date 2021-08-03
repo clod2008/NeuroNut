@@ -22,7 +22,7 @@ const noticiaPost02 = {
     fecha       : '25_5_2021',
     titulo      : 'Nota Dos',
     imgUrl      : 'images/image_2.jpg',
-    copete      : 'Texto del copete de la Nota 2',
+    copete      : 'La extensión del copete debe de tener entre 65 y  caracteres con espacios (2 líneas) y 126 caracteres con espacios (4 líneas)',
     link        : 'blog.html#',
     textoPpal   : 'Acá va el cuerpo del texto de la nota, esta información aparece cuando el usuario presiona el botón de "Saber Más".',
     id          : 'not02'
@@ -81,13 +81,13 @@ class Post {
                         </div>
                         <h3 class="heading"><a>${this.titulo}</a></h3>
                         <p>${this.copete}</p>
-                        <p><a href="${this.link}" class="btn btn-secondary py-2 px-3">Saber Más</a></p>
+                        <p><a href="${this.link}" class="saberMas">Saber Más --></a></p>
                     </div>
                 </div>
             
 
         `);
-        post.classList.add('col-md-4')
+        post.classList.add('col-md-4', 'card',)
         ultimosPost.append(post);
         ultimosPost.classList.add('row', 'd-flex',)
     

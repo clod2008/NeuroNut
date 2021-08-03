@@ -266,6 +266,11 @@ html {
 .postContenedor {
   
 }
+.saberMas{
+
+} .saberMas:hover{
+  color: var(--gray-dark);
+  }
 
 /* home */
 #pilares a {
