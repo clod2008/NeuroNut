@@ -6,6 +6,7 @@ const contUCDM1 = {
     instructor: 'LIC. ROSA DE ALMEIDA',
     id: 'UCDM1',
     precio: '$ 3000',
+    pago: 'mensules',
     linkDePago: 'https://clod2008.github.io/NeuroNut/linkDePagoUCDM1.html',
     buttonId: 'linkPago-UCDM1',
     ariaDisabled: false,
@@ -19,7 +20,8 @@ const contUCDM2 = {
     title: 'Un Curso de Milagros<br>Estudiantes avanzados',
     instructor: 'LIC. ROSA DE ALMEIDA',
     id: 'UCDM2',
-    precio: '$ 3500',
+    precio: '$ 1500',
+    pago: 'por cada clase',
     linkDePago: 'https://clod2008.github.io/NeuroNut/linkDePagoUCDM2.html',
     buttonId: 'linkPago-UCDM2',
     ariaDisabled: false,
@@ -34,6 +36,7 @@ const contNeuro = {
     instructor: 'LIC. ROSA DE ALMEIDA',
     id: 'NeuroNut',
     precio: 'PRÓXIMAMANTE',
+    pago: '-',
     linkDePago: 'https://clod2008.github.io/NeuroNut/linkDePagoNeuroNut.html',
     buttonId: 'linkPago-NeuroNut',
     ariaDisabled: true,
@@ -57,10 +60,16 @@ const crearCursoDestacado = (curso)=> {
                 <h3><a href="${curso.url}">${curso.title}</a></h3>
                 <p class="advisor">Maestra de Dios<br>y Psicoterapeuta del Espíritu<br><span class="">${curso.instructor}</span></p>
                 <ul class="d-flex justify-content-between">
-                <li>Code: ${curso.id}</li>
+                    <li>Code: ${curso.id}</li>
                     <li class="price">${curso.precio}</li>
-                    </ul>
-                    </div>
+                </ul>
+                <div>
+                <ul class="d-flex justify-content-between">
+                    <li></li>
+                    <li class="price">${curso.pago}</li>
+                </ul>
+            </div>
+        </div>
             <div class="d-flex justify-content-center align-items-center">
                 <img class="mercadoPagoImg img-fluid col-4  mt-3 mb-3" src="./images/SVG/mercadoPagoCjaH.svg" alt="">
                 <a href="${curso.linkDePago}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}" target="_blank">Pagar este curso</a>   
@@ -85,6 +94,12 @@ const crearCursoDestacado = (curso)=> {
                                             <li>Code: ${curso.id}</li>
                                             <li class="price">${curso.precio}</li>
                                         </ul>
+                                        <div>
+                                            <ul class="d-flex justify-content-between">
+                                                <li></li>
+                                                <li class="price">${curso.pago}</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <div class="d-flex justify-content-center align-items-center">
                                         <img class="mercadoPagoImg img-fluid col-4 mt-3 mb-3" src="./images/SVG/mercadoPagoCjaH.svg" alt="">
