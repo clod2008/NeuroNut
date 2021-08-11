@@ -61,13 +61,23 @@ const noticiaPost02 = {
 }
 
 const noticiaPost03 = {
-    autor       : 'Martín Maidana',
-    fecha       : '13_7_2021',
-    titulo      : 'Nota Tres',
+    autor       : 'Lic. Rosa B. de Almeida',
+    fecha       : '11_8_2021',
+    titulo      : 'La Psicoterapia de Un Curso De Milagros',
     imgUrl      : 'images/image_3.jpg',
-    copete      : 'Texto del copete de la Nota 3',
+    copete      : '<i>“La mente es lo único que puede enfermar, asimismo es lo único que puede ser sanado. Solo la mente tiene necesidad de curación”.</i>',
     link        : 'blog.html#',
-    textoPpal   : 'Acá va el cuerpo del texto de la nota, esta información aparece cuando el usuario presiona el botón de "Saber Más".',
+    textoPpal   : `  <div>
+                        <p class="ml-5"><i>“la psicoterapia es la única forma de terapia que existe. Puesto que la mente es lo único que puede enfermar, es asimismo lo único que puede ser sanado. Solo la mente tiene la necesidad de curación. Esto no parece ser así, pues las manifestaciones de este mundo ciertamente parecen reales. Por ello, la psicoterapia es necesaria para que el individuo comience a cuestionar su realidad. En algunos casos, puede comenzar a abrir su mente sin ayuda profesional, pero incluso entonces es siempre algún cambio en su manera de percibir las relaciones interpersonales lo que le permitirá hacerlo. Algunas veces, no obstante, necesita una relación mas estructurada y extensa con un terapeuta “oficial”. En ambos casos, la tarea es la misma: al paciente se lo debe ayudar a cambiar de parecer acerca de la “realidad” de las ilusiones”</i>. UCDM P.I. 9</p>
+                        <p>Es una herramienta para llegar a la causa de un efecto que estamos viviendo en el presente. </p>
+                        <p>Los pacientes llegan a la consulta con un problema en el presente, que puede ser, un problema de salud, una enfermedad, problemas de relaciones con la pareja, con los hijos, con los padres, problemas en el trabajo, etc.</p>
+                        <p>Generalmente todos interpretamos que los conflictos o problemas son la causa de nuestro malestar, pero no es así, son simplemente el efecto, a modo de mensaje, como si fueran el cartero que nos trae el mensaje.</p>
+                        <p>En mi experiencia personal, luego de recorrer y estudiar varias terapias, llegue a la conclusión que la Psicoterapia de ucdm es la única herramienta que nos reúne con la causa inicial de los efectos que estoy viviendo en mi presente.</p>
+                        <p>El origen del conflicto o problema es La causa, que se encuentra en nuestra mente insconsciente, es algo que hemos decretado en un momento de nuestra vida, generalmente es en la niñez, un juicio, una condena, una interpretación de una idea mal entendida, que le hemos dado realidad, validez, hemos dicho esto es asi, afirmamos esto es posible! </p>
+                        <p>De manera que el efecto es un espejo de esa causa que se encuentra oculta en nuestra mente inconsciente.</p>
+                        <p>La psicoterapia nos garantiza ir a esa causa, reconocerla como una decisión propia, esto es un poco duro, difícil de reconocer que lo que este viviendo en el presente que es un conflicto que lo vivo con preocupación, sufrimiento, gravedad, nosotros mismos  lo hemos pedido, hemos  necesitado la experiencia porque le hemos dado realidad y hemos agotado todos los recursos, con humidad asumimos esa responsabilidad, se produce una resolución interna, siempre de la mano del Espíritu Santo, y se re constela todo en nuestras mentes produciendo como si fuera una embolia, un shock, y es cuando damos paso al milagro.</p>
+                        <p>La Psicoterapia de ucdm dirigida y acompañada por el Espíritu Santo, te demuestra que todo esta dentro de nosotros, que lo que vemos simplemente es una proyección de una parte de nuestra mente, y que, si le permitimos al Espíritu Santo intervenir y le entregamos la causa a El, nos conduce a la sanación y liberación de la causa, garantizándonos la Paz, sin condicionamientos, sin rechazos, sin castigos.</p>
+                    </div>`,
     id          : 'not03'
 }
 
@@ -186,7 +196,7 @@ class PostCompleto {
             
 
         `);
-        post.classList.add('col-md-12', 'row', 'postContenedor')
+        post.classList.add('col-md-12', 'row', 'postContenedor', 'mb-5')
         todosLosPost.append(post);
         todosLosPost.classList.add('row', 'd-flex',)
     
