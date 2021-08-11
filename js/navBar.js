@@ -39,7 +39,7 @@ const links = {
                 NeuroNut: {
                     url: 'cursoNeuroNut.html',
                     page: 'NeuroNut',
-                    textLink: 'Bio Neuro Nutrición',
+                    textLink: 'Creando un Nuevo Sendero 1',
                     activo: ()=> {if (links.course.cursos.NeuroNut.page == page){ return 'active'} else {return ''}
                     }
                 }

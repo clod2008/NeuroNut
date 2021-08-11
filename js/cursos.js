@@ -31,16 +31,16 @@ const contUCDM2 = {
 const contNeuro = {
     imagenURL: 'images/2728.jpg',
     url: 'cursoNeuroNut.html',
-    claim: 'Nuticion Mental',
-    title: 'Bio Neuro Nutrición<br><br>',
+    claim: 'Nutrición y Espiritualidad',
+    title: 'Creando un Nuevo Sendero 1<br><br> ',
     instructor: 'LIC. ROSA DE ALMEIDA',
     id: 'NeuroNut',
-    precio: 'PRÓXIMAMANTE',
-    pago: '-',
+    precio: '$ 6500',
+    pago: '3 cuotas',
     linkDePago: 'https://clod2008.github.io/NeuroNut/linkDePagoNeuroNut.html',
     buttonId: 'linkPago-NeuroNut',
-    ariaDisabled: true,
-    buttonDisable: 'disabled'
+    ariaDisabled: false,
+    buttonDisable: ''
 }
 
 

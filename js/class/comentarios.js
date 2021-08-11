@@ -52,15 +52,27 @@ class Comentario {
 
 }
 
+//cursoEtudiadiado
+const cursoTomado  = {
+    UCDM1: {
+        textLink: 'UCDM1',
+        url: '../../cursoUCDM1.html'
+    },
+    UCDM2: {
+        textLink: 'UCDM2',
+        url: '../../cursoUCDM2.html'
+    },
+}
 // comentario 01
-const comentario01 = new Comentario('Martin Maidana', 'Estudiante','active','images/person_1.jpg','Este sitio está Genial !!!!');
+const testimonioNerina ='La Experiencia de UCDM con Rosa marco en mi vida un antes y un después. Me enseño a ver las cosas de una manera mas amplia, mas sana. En los cursos aprendí a conocerme y mirar al otro desde un lugar diferente. La experiencia de Psicoterapia me ayudo a sanar temas muy profundos. Sigo tomando sus cursos, ya que considero que es un camino de ida como dicen...... y hay mucho por recorrer.... Cada encuentro es una bendición!! GRACIAS GRACIAS GRACIAS'
+const comentario01 = new Comentario('Nerina Stevanelli',`<a href="${cursoTomado.UCDM1.url}" target="_self">Estudiante ${cursoTomado.UCDM1.textLink}</a>`,'active','images/person_1.jpg',testimonioNerina);
 comentario01.crearComentario();
 // comentario 02
-const comentario02 = new Comentario('Claudio Uccello', 'CEO','false','images/person_2.jpg','Me encanta la claridad de la información');
+const testimonioJorge = 'Cuando me dí la oportunidad de participar en las ediciones de UCDM dictado por Rosa De Almeida, permití que la vida me muestre el camino que vine a buscar, el mío, el que siempre sabía que existía en mi pero no podía encontrar. Mi camino de crecimiento. Aprendí a acrecentar mi nivel de consciencia, a transformar mi percepción de la realidad y la incorporación de las grandes lecciones que cambiarían mi propia vida.<br><br> '
+const comentario02 = new Comentario('Jorge Tramontin',`<a href="${cursoTomado.UCDM1.url}" target="_self">Estudiante ${cursoTomado.UCDM1.textLink}</a>`,'false','images/person_2.jpg',testimonioJorge);
 comentario02.crearComentario();
 // comentario 03
-const comentario03 = new Comentario('Juan Pérez', '','false','images/person_3.jpg','UCDM me cambió la vida, Rosa es la majeor');
+const testimonioAndrea = '... Gracias a Dios, que todo lo resuelve en el momento justo, la Licenciada Rosa de Almeida, una querida amiga, comenzó́ a incursionar en el estudio de Un Curso de Milagros y luego de formarse comenzó́ a dictar cursos para compartir lo aprendido. ...<br><br><br>'
+const comentario03 = new Comentario('Andrea Burden',`<a href="${cursoTomado.UCDM1.url}" target="_self">Estudiante ${cursoTomado.UCDM1.textLink}</a>`,'false','images/person_3.jpg',testimonioAndrea);
 comentario03.crearComentario();
-// comentario 04
-const comentario04 = new Comentario('Horacio Cavac', 'Actor','false','images/person_4.jpg','Todo Genial');
-comentario04.crearComentario();
+

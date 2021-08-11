@@ -49,6 +49,6 @@ function form_mail($sPara, $sAsunto, $sTexto, $sDe) {
 // Cambia aqui el email. Revisa los nombres de los campos de email y asunto según el video
 // https://www.youtube.com/formaciongrafica
 if (form_mail("claudio@apsis.com.ar", $_POST[asunto],
-    "Formulario del Curso NeuroNut\n\n", $_POST[email]))
+    "-- RESERVA -- Formulario del Curso NeuroNut\n\n", $_POST[email]))
     header("Location: envioOK.html");
 ?>
