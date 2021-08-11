@@ -133,7 +133,7 @@ class Post {
         ultimosPost.append(post);
         ultimosPost.classList.add('row', 'd-flex',)
     
-    }   
+    } 
 }
 
 
