@@ -42,6 +42,13 @@ const links = {
                     textLink: 'Creando un Nuevo Sendero 1',
                     activo: ()=> {if (links.course.cursos.NeuroNut.page == page){ return 'active'} else {return ''}
                     }
+                },
+                NeuroNutL2: {
+                    url: 'cursoNeuroNutL2.html',
+                    page: 'NeuroNutL2',
+                    textLink: 'Creando un Nuevo Sendero 2',
+                    activo: ()=> {if (links.course.cursos.NeuroNutL2.page == page){ return 'active'} else {return ''}
+                    }
                 }
             }
         },
@@ -105,6 +112,9 @@ navBar.innerHTML = `
                 <a class="dropdown-item" href="${links.course.cursos.NeuroNut.url}">
                 ${links.course.cursos.NeuroNut.textLink}
                 </a>
+                <a class="dropdown-item" href="${links.course.cursos.NeuroNutL2.url}">
+                ${links.course.cursos.NeuroNutL2.textLink}
+                </a>
                 </div>
                 </li>
                 <li class="nav-item ${links.instructor.activo()}"><a href="${links.instructor.url}" class="nav-link">${links.instructor.textLink}</a></li>
@@ -155,6 +165,7 @@ footerPlace.append(`
                             <li><a href="${links.course.cursos.UCDM1.url}" class="py-2 d-block"     >${links.course.cursos.UCDM1.textLink}</a></li>
                             <li><a href="${links.course.cursos.UCDM2.url}" class="py-2 d-block"     >${links.course.cursos.UCDM2.textLink}</a></li>
                             <li><a href="${links.course.cursos.NeuroNut.url}" class="py-2 d-block"  >${links.course.cursos.NeuroNut.textLink}</a></li>
+                            <li><a href="${links.course.cursos.NeuroNutL2.url}" class="py-2 d-block"  >${links.course.cursos.NeuroNutL2.textLink}</a></li>
                         </ul>
                     </div>
                 </div>

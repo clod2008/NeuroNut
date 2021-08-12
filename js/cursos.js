@@ -43,6 +43,21 @@ const contNeuro = {
     buttonDisable: ''
 }
 
+const contNeuroL2 = {
+    imagenURL: 'images/NeuroNut2.jpg',
+    url: 'cursoNeuroNutL2.html',
+    claim: 'Nutrición y Espiritualidad',
+    title: 'Creando un Nuevo Sendero 2<br><br> ',
+    instructor: 'LIC. ROSA DE ALMEIDA',
+    id: 'NeuroNutL2',
+    precio: '$ 5000',
+    pago: 'mensules',
+    linkDePago: 'https://clod2008.github.io/NeuroNut/linkDePagoNeuroNut.html',
+    buttonId: 'linkPago-NeuroNut',
+    ariaDisabled: false,
+    buttonDisable: ''
+}
+
 
 const   cursosVihgentes = document.getElementById('cursosVihgentes')
 
