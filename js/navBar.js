@@ -55,7 +55,7 @@ const links = {
     instructor: { 
             url: 'instructor-details.html',
             page: 'instructor',
-            textLink: 'acerca de Rosa',
+            textLink: 'Acerca de Rosa',
             activo: ()=> {if (links.instructor.page == page){ return 'active'} else {return ''}
             }
         },  

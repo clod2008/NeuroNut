@@ -3,7 +3,7 @@ function form_mail($sPara, $sAsunto, $sTexto, $sDe) {
     $bHayFicheros = 0;
     $sCabeceraTexto = "";
     $sAdjuntos = "";
-    $sAsunto ="Creando un Nuevo Sendero 1";
+    $sAsunto ="Creando un Nuevo Sendero 2";
 
     if ($sDe)$sCabeceras = "From:".$sDe."\n";
     else $sCabeceras = "";
@@ -49,6 +49,6 @@ function form_mail($sPara, $sAsunto, $sTexto, $sDe) {
 // Cambia aqui el email. Revisa los nombres de los campos de email y asunto según el video
 // https://www.youtube.com/formaciongrafica
 if (form_mail("claudio@apsis.com.ar", $_POST[asunto],
-    "-- RESERVA -- Formulario del Curso Senderos 1\n\n", $_POST[email]))
+    "-- RESERVA -- Formulario del Sendros 2\n\n", $_POST[email]))
     header("Location: envioOK.html");
 ?>

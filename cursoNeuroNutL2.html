@@ -54,7 +54,7 @@
 
           </div>
           <div class="project-wrap col-11 mx-auto d-flex align-items-center align-items-stretch">
-            <form id="formNeuroNut" class="pt-2 col-12"></form>
+            <form id="formNeuroNutL2" class="pt-2 col-12"></form>
           </div>
 
           <div id="instructorCurso"></div>
@@ -88,15 +88,7 @@
               <li>No juzgar, aprender a observar, integrar</li>
               <li>Decidir de nuevo</li>
             </ol>
-            <h3>Con este curso aprenderás:</h3>
-              <ul>
-                <li>Alimentación consciente: alimentos, recetas, formas de preparación, porciones, combinaciones, ayunos, limpiezas.</li>
-                <li>Como funciona el aparato digestivo, sanar disfunciones alimentándote sanamente, espiritualmente.</li>
-                <li>Sanación de la mente. Como funciona nuestra mente. Mente dual. Ego. Mente uno. Espíritu. </li>
-                <li>Aprenderás el arte de escuchar el cuerpo, a través de señales o síntomas. Conociendo como piensas, a que asesor de la mente escuchas, cuales son tus creencias, tus limitaciones, bloqueos.</li>
-                <li>Aprenderás auto decodificar conflictos, a través de la meditación y respiración consciente, indispensable para tomar nuevas decisiones.</li>
-              </ul>
-
+          <h3>La clase se divide en 2 partes. Una dedicada a la nutrición y la segunda a la parte mental, conociéndose desde la perspectiva espiritual.</h3>
           <div class="card text-center mt-4 mb-4 ftco-animate ">
             <div class="card-body">
               <h3 class="card-title">Inicio</h3>
@@ -133,11 +125,32 @@
     </div>
   </div>
 </section>
+<section id="formaDePago">
+  <div class="container ftco-animate">
+    <div class="row staff-detail d-flex justify-content-center">
+      <div class=" col-md-5 card text-center mt-4 mb-4 project-wrap mr-2">
+        <div class="card-body text">
+            <h3 class="card-title">Argentina</h3>
+            <img src="./images/SVG/mercadoPagoCjaH.svg" alt="" class="mb-3">
+            <div id="opcionPagoML"></div>
+        </div>
+      </div>
+      <div class=" col-md-5 card text-center mt-4 mb-4 project-wrap ml-2">
+        <div class="card-body text">
+            <h3 class="card-title">Otros Países</h3>
+            <img src="./images/SVG/paypal-logo.svg" alt="" class="mb-3">
+            <div id="opcionPagoPP"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section class="ftco-section bg-light ftco-no-pt">
+
+<section class="ftco-section bg-light ftco-no-pt ">
   <div class="container">
     <div class="row pb-4">
-      <div class="col-md-12 heading-section ftco-animate">
+      <div class="col-md-12 heading-section ftco-animate mt-5">
         <h2 class="mb-4">Otros cursos de la <strong> Lic. Rosa de Almeida</strong></h2>
       </div>
     </div>
@@ -145,6 +158,7 @@
     </div>
   </div>
 </section>
+
 
 <footer></footer>
 
@@ -179,11 +193,12 @@
   pageTitle.innerText = links.course.cursos.NeuroNutL2.textLink;
   const activeMenuItem = $('#cursos');
   activeMenuItem.addClass( "active" );
-  crearCursoDestacado(contNeuroL2)
-  // cusrsosDisponibles(contUCDM1,'4')
-  cusrsosDisponibles(contUCDM1,'4')
-  cusrsosDisponibles(contUCDM2,'4')
-  cusrsosDisponibles(contNeuro,'4')
+  crearCursoDestacado(contNeuroL2);
+  cusrsosDisponibles(contUCDM1,'4');
+  cusrsosDisponibles(contUCDM2,'4');
+  cusrsosDisponibles(contNeuro,'4');
+  crearPreciosML(contNeuroL2);
+  crearPreciosPP(contNeuroL2);
 </script>
 
 <script src="./js/precios.js"></script>

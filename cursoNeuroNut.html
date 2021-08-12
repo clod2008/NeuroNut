@@ -123,6 +123,26 @@
     </div>
   </div>
 </section>
+<section id="formaDePago">
+  <div class="container ftco-animate">
+    <div class="row staff-detail d-flex justify-content-center">
+      <div class=" col-md-5 card text-center mt-4 mb-4 project-wrap mr-2">
+        <div class="card-body text">
+            <h3 class="card-title">Argentina</h3>
+            <img src="./images/SVG/mercadoPagoCjaH.svg" alt="" class="mb-3">
+            <div id="opcionPagoML"></div>
+        </div>
+      </div>
+      <div class=" col-md-5 card text-center mt-4 mb-4 project-wrap ml-2">
+        <div class="card-body text">
+            <h3 class="card-title">Otros Países</h3>
+            <img src="./images/SVG/paypal-logo.svg" alt="" class="mb-3">
+            <div id="opcionPagoPP"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="ftco-section bg-light ftco-no-pt">
   <div class="container">
@@ -175,7 +195,9 @@
   // cusrsosDisponibles(contUCDM1,'4')
   cusrsosDisponibles(contUCDM1,'4')
   cusrsosDisponibles(contUCDM2,'4')
-  cusrsosDisponibles(contUCDM2,'4')
+  cusrsosDisponibles(contNeuroL2,'4')
+  crearPreciosML(contNeuro);
+  crearPreciosPP(contNeuro);
 </script>
 
 <script src="./js/precios.js"></script>

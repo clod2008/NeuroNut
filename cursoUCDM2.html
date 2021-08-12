@@ -175,10 +175,31 @@
   </div>
 </section>
 
+<section id="formaDePago">
+  <div class="container ftco-animate">
+    <div class="row staff-detail d-flex justify-content-center">
+      <div class=" col-md-5 card text-center mt-4 mb-4 project-wrap mr-2">
+        <div class="card-body text">
+            <h3 class="card-title">Argentina</h3>
+            <img src="./images/SVG/mercadoPagoCjaH.svg" alt="" class="mb-3">
+            <div id="opcionPagoML"></div>
+        </div>
+      </div>
+      <div class=" col-md-5 card text-center mt-4 mb-4 project-wrap ml-2">
+        <div class="card-body text">
+            <h3 class="card-title">Otros Países</h3>
+            <img src="./images/SVG/paypal-logo.svg" alt="" class="mb-3">
+            <div id="opcionPagoPP"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="ftco-section bg-light ftco-no-pt">
   <div class="container">
     <div class="row pb-4">
-      <div class="col-md-12 heading-section ftco-animate">
+      <div class="col-md-12 heading-section ftco-animate mt-5">
         <h2 class="mb-4">Otros cursos de la <strong> Lic. Rosa de Almeida</strong></h2>
       </div>
     </div>
@@ -223,9 +244,11 @@
   const activeMenuItem = $('#cursos');
   activeMenuItem.addClass( "active" );
   crearCursoDestacado(contUCDM2)
-  // cusrsosDisponibles(contUCDM1,'4')
-  cusrsosDisponibles(contUCDM1,'6')
-  cusrsosDisponibles(contNeuro,'6')
+  cusrsosDisponibles(contUCDM1,'4');
+  cusrsosDisponibles(contNeuro,'4');
+  cusrsosDisponibles(contNeuroL2,'4');
+  crearPreciosML(contUCDM2);
+  crearPreciosPP(contUCDM2);
 </script>
 
 <script src="./js/precios.js"></script>
