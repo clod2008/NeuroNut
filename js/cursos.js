@@ -8,6 +8,7 @@ const contUCDM1 = {
     buttonId: 'linkPago-UCDM1',
     ariaDisabled: false,
     buttonDisable: '',
+    bifurcadorPagos: 'cursoUCDM1.html#formaDePago',
 
     // PESOS forma de pago 1
     pago1: 'mensuales',
@@ -40,6 +41,7 @@ const contUCDM2 = {
     id: 'UCDM2',
     ariaDisabled: false,
     buttonDisable: '',
+    bifurcadorPagos: 'cursoUCDM2.html#formaDePago',
 
     // PESOS forma de pago 1
     pago1: 'por cada clase',
@@ -72,6 +74,7 @@ const contNeuro = {
     id: 'NeuroNut',
     ariaDisabled: false,
     buttonDisable: '',
+    bifurcadorPagos: 'cursoNeuroNut.html#formaDePago',
 
     // PESOS forma de pago 1
     pago1: 'por cada cuota',
@@ -104,6 +107,7 @@ const contNeuroL2 = {
     id: 'NeuroNutL2',
     ariaDisabled: false,
     buttonDisable: '',
+    bifurcadorPagos: 'cursoNeuroNutL2.html#formaDePago',
 
     // PESOS forma de pago 1
     pago1: 'mensuales',
@@ -163,7 +167,7 @@ const crearCursoDestacado = (curso)=> {
                     </div>
             </div>
             <div class="d-flex justify-content-center align-items-center">
-                    <a href="${curso.linkDePago1}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}" target="_blank">Pagar este curso</a>   
+                    <a href="${curso.bifurcadorPagos}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}" target="_blank">Pagar este curso</a>   
             </div>
             <div class="d-flex justify-content-center align-items-center">
                 <img class="mercadoPagoImg img-fluid col-4 mt-3 mb-3" src="./images/SVG/mercadoPagoCjaH.svg" alt="">
@@ -197,7 +201,7 @@ const crearCursoDestacado = (curso)=> {
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-center align-items-center">
-                                        <a href="${curso.linkDePago1}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}" target="_blank">Pagar este curso</a>
+                                        <a href="${curso.bifurcadorPagos}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}" target="_blank">Pagar este curso</a>
                                     </div>
                                     <div class="d-flex justify-content-center align-items-center">
                                         <img class="mercadoPagoImg img-fluid col-4 mt-3 mb-3" src="./images/SVG/mercadoPagoCjaH.svg" alt="">
