@@ -33,7 +33,7 @@
 	loader();
 
 	// Scrollax
-   $.Scrollax();
+   	// $.Scrollax();
 
 	var carousel = function() {
 		$('.carousel-testimony').owlCarousel({

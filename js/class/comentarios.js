@@ -64,7 +64,7 @@ const cursoTomado  = {
     },
 }
 // comentario 01
-const testimonioNerina ='La Experiencia de UCDM con Rosa marco en mi vida un antes y un después. Me enseño a ver las cosas de una manera mas amplia, mas sana. En los cursos aprendí a conocerme y mirar al otro desde un lugar diferente. La experiencia de Psicoterapia me ayudo a sanar temas muy profundos. Sigo tomando sus cursos, ya que considero que es un camino de ida como dicen...... y hay mucho por recorrer.... Cada encuentro es una bendición!! GRACIAS GRACIAS GRACIAS'
+const testimonioNerina ='La Experiencia de UCDM con Rosa marcó en mi vida un antes y un después. Me enseñó a ver las cosas de una manera más amplia, más sana. En los cursos aprendí a conocerme y mirar al otro desde un lugar diferente. La experiencia de Psicoterapia me ayudó a sanar temas muy profundos. Sigo tomando sus cursos, ya que considero que es un camino de ida como dicen... y hay mucho por recorrer... Cada encuentro es una bendición!! GRACIAS GRACIAS GRACIAS'
 const comentario01 = new Comentario('Nerina Stevanelli',`<a href="${cursoTomado.UCDM1.url}" target="_self">Estudiante ${cursoTomado.UCDM1.textLink}</a>`,'active','images/person_1.jpg',testimonioNerina);
 comentario01.crearComentario();
 // comentario 02
@@ -72,7 +72,7 @@ const testimonioJorge = 'Cuando me dí la oportunidad de participar en las edici
 const comentario02 = new Comentario('Jorge Tramontin',`<a href="${cursoTomado.UCDM1.url}" target="_self">Estudiante ${cursoTomado.UCDM1.textLink}</a>`,'false','images/person_2.jpg',testimonioJorge);
 comentario02.crearComentario();
 // comentario 03
-const testimonioAndrea = '... Gracias a Dios, que todo lo resuelve en el momento justo, la Licenciada Rosa de Almeida, una querida amiga, comenzó́ a incursionar en el estudio de Un Curso de Milagros y luego de formarse comenzó́ a dictar cursos para compartir lo aprendido. ...<br><br><br>'
+const testimonioAndrea = '... Gracias a Dios, que todo lo resuelve en el momento justo, la Licenciada Rosa de Almeida, una querida amiga, comenzó́ a incursionar en el estudio de Un Curso de Milagros y luego de formarse comenzó a dictar cursos para compartir lo aprendido...<br><br><br>'
 const comentario03 = new Comentario('Andrea Burden',`<a href="${cursoTomado.UCDM1.url}" target="_self">Estudiante ${cursoTomado.UCDM1.textLink}</a>`,'false','images/person_3.jpg',testimonioAndrea);
 comentario03.crearComentario();
 

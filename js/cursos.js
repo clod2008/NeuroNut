@@ -167,7 +167,7 @@ const crearCursoDestacado = (curso)=> {
                     </div>
             </div>
             <div class="d-flex justify-content-center align-items-center">
-                    <a href="${curso.bifurcadorPagos}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}" target="_blank">Pagar este curso</a>   
+                    <a href="${curso.bifurcadorPagos}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}">Comprá este curso</a>   
             </div>
             <div class="d-flex justify-content-center align-items-center">
                 <img class="mercadoPagoImg img-fluid col-4 mt-3 mb-3" src="./images/SVG/mercadoPagoCjaH.svg" alt="">
@@ -201,7 +201,7 @@ const crearCursoDestacado = (curso)=> {
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-center align-items-center">
-                                        <a href="${curso.bifurcadorPagos}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}" target="_blank">Pagar este curso</a>
+                                        <a href="${curso.bifurcadorPagos}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}">Comprá este curso</a>
                                     </div>
                                     <div class="d-flex justify-content-center align-items-center">
                                         <img class="mercadoPagoImg img-fluid col-4 mt-3 mb-3" src="./images/SVG/mercadoPagoCjaH.svg" alt="">
@@ -224,6 +224,9 @@ const crearCursoDestacado = (curso)=> {
             <a href="#" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizar Pago único</a>   
         </div>
     </div>
+
+    <button><a href="./cursoNeuroNutL2.html#formaDePago">pagar</a></button>
+
 */
 
 
