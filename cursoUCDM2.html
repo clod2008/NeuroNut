@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Bio Neuro Nutricion : : Un Curso de Milagros Estudiantes avanzados</title>
+	<title>Bio Neuro Nutrición : : Un Curso de Milagros Estudiantes avanzados.</title>
+
+    <!-- Open Graph-->
+    <meta property="og:title" content="Bio Neuro Nutrición : : Un Curso de Milagros Estudiantes avanzados">
+    <meta property="og:site_name" content="Bio Neuro Nutrición : : UCDM">
+    <meta property="og:url" content="https://neuronut.com.ar/">
+    <meta property="og:description" content="Un Curso de Milagros. Estudiantes avanzados.
+                                             Este curso está dirigido a estudiantes que ya han hecho el nivel inicial, el UCDM nivel 1, que se encuentran familiarizados con el lenguaje, las premisas del Libro UCDM.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://neuronut.com.ar/images/512h/bioNeuroNut.jpg">
+    <!-- Open Graph-->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -63,12 +74,12 @@
       </div>
       <div class="col-md-8 d-flex align-items-center">
         <div class="staff-detail w-100 pl-md-5">
-          <h3>Curso de Milagros. Estudiantes avanzados</h3>
-          <h4>Este curso esta dirigido a estudiantes que ya han hecho el nivel inicial, el <a href="./cursoUCDM1.html">UCDM nivel 1</a>, que se encuentran familiarizados con el lenguaje, las premisas del Libro UCDM.</h4>
+          <h3>Un Curso de Milagros. Estudiantes avanzados.</h3>
+          <h4>Este curso está dirigido a estudiantes que ya han hecho el nivel inicial, el <a href="./cursoUCDM1.html">UCDM nivel 1</a>, que se encuentran familiarizados con el lenguaje, las premisas del Libro UCDM.</h4>
           <p>
-            El proposito del curso es interiorizar los temas del libro, profundizando, analizando y practicando, siempre en búsqueda de la Paz.
-            Es un curso teórico practico para lograr vivir desde una perspectiva de paz interior.
-            Cada mes nos reunimos para exponer uno de los temas, y hacemos una dinámica practica para aprender e integrar el tema.
+            El propósito del curso es interiorizar los temas del libro, profundizando, analizando y practicando, siempre en búsqueda de la Paz.
+            Es un curso teórico práctico para lograr vivir desde una perspectiva de paz interior.
+            Cada mes nos reunimos para exponer uno de los temas y hacemos una dinámica práctica para aprender e integrar el tema.
             Es un aprendizaje continuo, no tiene principio ni fin, es una propuesta que cada uno puede tomar para sentirse acompañado en el estudio del curso.
             </p>
           <h4>Entre los temas a tratar:</h4>
@@ -88,21 +99,21 @@
               <ul>
                 <li>El deseo de ser especial. Las relaciones.</li>
                 <li>Psicoterapia.</li>
-                <li>Practicas de psicoterapia grupales.</li>
+                <li>Prácticas de psicoterapia grupales.</li>
                 <li>Reglas para tomar decisiones.</li>
                 <li>Las leyes del caos.</li>
               </ul>
 
             </div>
           </div>
-          <h3 class="mt-2">Programa de Un Curso de Milagros. Estudiantes avanzados</h3>
-          <h4>Tallers teóricos prácticos</h4>
+          <h3 class="mt-2">Programa de Un Curso de Milagros. Estudiantes avanzados.</h3>
+          <h4>Talleres teórico-prácticos</h4>
 
           <div class="card text-center mt-4 mb-4 ftco-animate ">
             <div class="card-body">
               <h3 class="card-title">Inicio</h3>
               <i class="fas fa-stopwatch fa-4x"></i>
-              <p class="card-text">Se dictan los segundos lunes de cada mes</p>
+              <p class="card-text" id="inicio"></p>
             </div>
           </div>
           <div class="card-deck ftco-animate">
@@ -110,21 +121,21 @@
               <div class="card-body">
                 <h3 class="card-title">Horario</h3>
                 <i class="far fa-clock fa-4x"></i>
-                <p class="card-text">6:30 PM. a 21 PM.</p>
+                <p class="card-text" id="horario"></p>
               </div>
             </div>
             <div class="card text-center  mt-4 mb-4 ftco-animate">
               <div class="card-body">
                 <h3 class="card-title">Metodología</h3>
                 <i class="fas fa-desktop fa-4x"></i>
-                <p class="card-text">ZOOM</p>
+                <p class="card-text" id="metodo"></p>
               </div>
             </div>
             <div class="card text-center col-md-4 mt-4 mb-4 ftco-animate">
               <div class="card-body">
                 <h3 class="card-title">Duración</h3>
                 <i class="far fa-calendar-alt fa-4x "></i>
-                <p class="card-text">12 meses</p>
+                <p class="card-text" id="duracion"></p>
               </div>
             </div>
           </div>
@@ -165,7 +176,7 @@
             </li>
             <li><strong>Taller 12: </strong><br>
               Reflexiones finales. Cierre <br>
-              Meditaciones. Prácticas de psicoterapias
+              Meditaciones. Prácticas de psicoterapia
 
             </li>
           </ul>
@@ -249,6 +260,7 @@
   cusrsosDisponibles(contNeuroL2,'4');
   crearPreciosML(contUCDM2);
   crearPreciosPP(contUCDM2);
+  curseInfo(contUCDM2);
 </script>
 
 <script src="./js/precios.js"></script>

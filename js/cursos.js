@@ -1,3 +1,8 @@
+
+
+
+
+
 const contUCDM1 = {
     imagenURL: 'images/3d-silhouette-man-with-arms-raised-against-sunset-ocean-landscape.jpg',
     url: 'cursoUCDM1.html',
@@ -9,12 +14,16 @@ const contUCDM1 = {
     ariaDisabled: false,
     buttonDisable: '',
     bifurcadorPagos: 'cursoUCDM1.html#formaDePago',
+    inicio: 'lunes 6 de septiembre de 2021',
+    horario: '10 AM. a 12 AM.',
+    metodo: 'ZOOM',
+    duracion: '5 meses',
 
     // PESOS forma de pago 1
     pago1: 'mensuales',
     precio1: '$ 3.000',
     formaDePago1: 'pago por mes',
-    linkDePago1: 'https://clod2008.github.io/NeuroNut/linkDePagoUCDM1.html',
+    linkDePago1: 'https://mpago.la/2KXVkgK',
     // PESOS forma de pago 2
     pago2: null,
     precio2: '$ 40.000',
@@ -42,12 +51,17 @@ const contUCDM2 = {
     ariaDisabled: false,
     buttonDisable: '',
     bifurcadorPagos: 'cursoUCDM2.html#formaDePago',
+    inicio: 'Se dictan los <strong>segundos lunes</strong> de cada mes',
+    horario: '6:30 PM. a 9 PM.',
+    metodo: 'ZOOM',
+    duracion: '12 meses',
+
 
     // PESOS forma de pago 1
     pago1: 'por cada clase',
     precio1: '$ 1.500',
     formaDePago1: 'pago por cada clase',
-    linkDePago1: 'https://clod2008.github.io/NeuroNut/linkDePagoUCDM2.html',
+    linkDePago1: 'https://mpago.la/2JcAbLi',
     // PESOS forma de pago 2
     pago2: null,
     precio2: '$ 9.000',
@@ -75,17 +89,21 @@ const contNeuro = {
     ariaDisabled: false,
     buttonDisable: '',
     bifurcadorPagos: 'cursoNeuroNut.html#formaDePago',
+    inicio: 'Octubre 2021',
+    horario: 'de 6 PM. a 9 PM.',
+    metodo: 'ZOOM',
+    duracion: '3 meses',
 
     // PESOS forma de pago 1
     pago1: 'por cada cuota',
     precio1: '$ 6.500',
     formaDePago1: 'pago por cuota',
-    linkDePago1: 'https://clod2008.github.io/NeuroNut/linkDePagoNeuroNut.html',
+    linkDePago1: 'https://mpago.la/17iN3CC',
     // PESOS forma de pago 2
     pago2: 'total',
     precio2: '$ 18.000',
     formaDePago2: 'pago total (3 cuotas)',
-    linkDePago2: '',
+    linkDePago2: 'https://mpago.la/1zh2fLr',
     // U$S forma de pago 1
     pago1_USD:  'por cada cuota',
     precio1_USD: 'U$S 40',
@@ -108,17 +126,21 @@ const contNeuroL2 = {
     ariaDisabled: false,
     buttonDisable: '',
     bifurcadorPagos: 'cursoNeuroNutL2.html#formaDePago',
+    inicio: '7 de octubre 2021<br><strong>Se dicta el primer y tercer jueves de cada mes</strong>',
+    horario: 'de 6 PM. a 9 PM.',
+    metodo: 'ZOOM',
+    duracion: '6 meses',
 
     // PESOS forma de pago 1
     pago1: 'mensuales',
     precio1: '$ 5000',
     formaDePago1: 'pago por mes',
-    linkDePago1: 'https://clod2008.github.io/NeuroNut/linkDePagoNeuroNut.html',
+    linkDePago1: 'https://mpago.la/2nS7Sqp',
     // PESOS forma de pago 2
     pago2: 'anual',
     precio2: '$ 28.000',
     formaDePago2: 'pago anual',
-    linkDePago2: '',
+    linkDePago2: 'https://mpago.la/16doSGo',
     // U$S forma de pago 1
     pago1_USD:  'mensuales',
     precio1_USD: 'U$S 28',
@@ -133,9 +155,21 @@ const contNeuroL2 = {
 }
 
 // HTML Rerf
-const   cursosVihgentes = document.getElementById('cursosVihgentes');
-const   opcionPagoML = document.getElementById('opcionPagoML');
-const   opcionPagoPP = document.getElementById('opcionPagoPP');
+const   cursosVihgentes = document.getElementById('cursosVihgentes'),
+        opcionPagoML = document.getElementById('opcionPagoML'),
+        opcionPagoPP = document.getElementById('opcionPagoPP'),
+        inicio = document.querySelector('#inicio'),
+        horario = document.querySelector('#horario'),
+        metodo = document.querySelector('#metodo'),
+        duracion = document.querySelector('#duracion');
+
+const curseInfo = ( curso )=>{
+    inicio.innerHTML = curso.inicio;
+    horario.innerHTML = curso.horario;
+    metodo.innerHTML = curso.metodo;
+    duracion.innerHTML = curso.duracion;
+}
+
 
 
 
@@ -243,7 +277,7 @@ const crearPreciosML = (curso)=> {
                     <li class="price">${curso.precio1}</li>
                 </ul>
                 <div class="d-flex justify-content-center align-items-center">
-                    <a href="${curso.linkDePago1}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizar ${curso.formaDePago1}</a>   
+                    <a href="${curso.linkDePago1}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizá el ${curso.formaDePago1}</a>   
                 </div>
             </div
         `);
@@ -260,7 +294,7 @@ const crearPreciosML = (curso)=> {
                     <li class="price">${curso.precio2}</li>
                 </ul>
                 <div class="d-flex justify-content-center align-items-center">
-                    <a href="#" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizar ${curso.formaDePago2}</a>   
+                    <a href="${curso.linkDePago2}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizá el ${curso.formaDePago2}</a>   
                 </div>
             </div
         `);
@@ -281,7 +315,7 @@ const crearPreciosPP = (curso)=> {
                     <li class="price">${curso.precio1_USD}</li>
                 </ul>
                 <div class="d-flex justify-content-center align-items-center">
-                    <a href="${curso.linkDePago1_USD}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizar ${curso.formaDePago1_USD}</a>   
+                    <a href="${curso.linkDePago1_USD}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizá el ${curso.formaDePago1_USD}</a>   
                 </div>
             </div
         `);
@@ -298,7 +332,7 @@ const crearPreciosPP = (curso)=> {
                     <li class="price">${curso.precio2_USD}</li>
                 </ul>
                 <div class="d-flex justify-content-center align-items-center">
-                    <a href="#" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizar ${curso.formaDePago2_USD}</a>   
+                    <a href="${curso.linkDePago2_USD}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizá el ${curso.formaDePago2_USD}</a>   
                 </div>
             </div
         `);

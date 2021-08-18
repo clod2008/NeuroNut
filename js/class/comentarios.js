@@ -75,4 +75,8 @@ comentario02.crearComentario();
 const testimonioAndrea = '... Gracias a Dios, que todo lo resuelve en el momento justo, la Licenciada Rosa de Almeida, una querida amiga, comenzó́ a incursionar en el estudio de Un Curso de Milagros y luego de formarse comenzó a dictar cursos para compartir lo aprendido...<br><br><br>'
 const comentario03 = new Comentario('Andrea Burden',`<a href="${cursoTomado.UCDM1.url}" target="_self">Estudiante ${cursoTomado.UCDM1.textLink}</a>`,'false','images/person_3.jpg',testimonioAndrea);
 comentario03.crearComentario();
+// comentario 04
+const testimonioGisela = '...Agradecida eternamente a Rosa,  amiga, compañera, maestra,  a quien  pude y puedo ver transformándose constantemente. El despertar esta allí, y solo hay que darse la oportunidad de verlo, de conectar con el espíritu de los otros.   Intentare e intento vibrar con un total compromiso y con la elección de hacer un camino nuevo, perdonándome en  todo el viaje. Bendiciones a todos!!! <br><br> '
+const comentario04 = new Comentario('Griselda Roldán',`<a href="${cursoTomado.UCDM1.url}" target="_self">Estudiante ${cursoTomado.UCDM1.textLink}</a>`,'false','images/person_4.jpg',testimonioGisela);
+comentario04.crearComentario();
 

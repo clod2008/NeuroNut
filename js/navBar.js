@@ -62,7 +62,7 @@ const links = {
     blog: { 
             url: 'blog.html',
             page: 'blog',
-            textLink: 'Noticias',
+            textLink: 'Notas de interés',
             activo: ()=> {if (links.blog.page == page){ return 'active'} else {return ''}
             }
         },
@@ -174,9 +174,8 @@ footerPlace.append(`
                         <h2 class="ftco-heading-2">Sigamos en contácto</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><i class="fas fa-map-marker-alt icon"></i><span class="text">Oldman 704, Loma Verde, Escobar, Buenos Aires, Argentina</span></li>
-                                <li><a href="https://wa.me/5493484365955?text=Me%20interesa%20conocer%20más%20sobre%20los%20cursos"><i class="fab fa-whatsapp icon"></i><span class="text"> +54 9 3484 36-5955
-                                            210</span></a></li>
+                                <li><i class="fas fa-map-marker-alt icon"></i><span class="text">Rivadavia 730 of 2, Escobar, Buenos Aires, Argentina</span></li>
+                                <li><a href="https://wa.me/5493484365955?text=Me%20interesa%20conocer%20más%20sobre%20los%20cursos"><i class="fab fa-whatsapp icon"></i><span class="text"> +54 9 3484 36-5955</span></a></li>
                                 <li><a href="mailto:${contactacData.email}"><span class="icon fa fa-paper-plane"></span><span
                                             class="text">${contactacData.email}</span></a></li>
                             </ul>
