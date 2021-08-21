@@ -201,7 +201,7 @@ const crearCursoDestacado = (curso)=> {
                     </div>
             </div>
             <div class="d-flex justify-content-center align-items-center">
-                    <a href="${curso.bifurcadorPagos}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}">Comprá este curso</a>   
+                    <a id="comprarDestacado${curso.id}" href="${curso.bifurcadorPagos}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}">Comprá este curso</a>   
             </div>
             <div class="d-flex justify-content-center align-items-center">
                 <img class="mercadoPagoImg img-fluid col-4 mt-3 mb-3" src="./images/SVG/mercadoPagoCjaH.svg" alt="">
@@ -235,7 +235,7 @@ const crearCursoDestacado = (curso)=> {
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-center align-items-center">
-                                        <a href="${curso.bifurcadorPagos}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}">Comprá este curso</a>
+                                        <a id="comprarCurso${curso.id}" href="${curso.bifurcadorPagos}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}">Comprá este curso</a>
                                     </div>
                                     <div class="d-flex justify-content-center align-items-center">
                                         <img class="mercadoPagoImg img-fluid col-4 mt-3 mb-3" src="./images/SVG/mercadoPagoCjaH.svg" alt="">
@@ -277,7 +277,7 @@ const crearPreciosML = (curso)=> {
                     <li class="price">${curso.precio1}</li>
                 </ul>
                 <div class="d-flex justify-content-center align-items-center">
-                    <a href="${curso.linkDePago1}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizá el ${curso.formaDePago1}</a>   
+                    <a id="pagoOp1${curso.id}" href="${curso.linkDePago1}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizá el ${curso.formaDePago1}</a>   
                 </div>
             </div
         `);
@@ -294,7 +294,7 @@ const crearPreciosML = (curso)=> {
                     <li class="price">${curso.precio2}</li>
                 </ul>
                 <div class="d-flex justify-content-center align-items-center">
-                    <a href="${curso.linkDePago2}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizá el ${curso.formaDePago2}</a>   
+                    <a id="pagoOp2${curso.id}" href="${curso.linkDePago2}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizá el ${curso.formaDePago2}</a>   
                 </div>
             </div
         `);
@@ -315,7 +315,7 @@ const crearPreciosPP = (curso)=> {
                     <li class="price">${curso.precio1_USD}</li>
                 </ul>
                 <div class="d-flex justify-content-center align-items-center">
-                    <a href="${curso.linkDePago1_USD}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizá el ${curso.formaDePago1_USD}</a>   
+                    <a id="pagoUSDOp1${curso.id}" href="${curso.linkDePago1_USD}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizá el ${curso.formaDePago1_USD}</a>   
                 </div>
             </div
         `);
@@ -332,7 +332,7 @@ const crearPreciosPP = (curso)=> {
                     <li class="price">${curso.precio2_USD}</li>
                 </ul>
                 <div class="d-flex justify-content-center align-items-center">
-                    <a href="${curso.linkDePago2_USD}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizá el ${curso.formaDePago2_USD}</a>   
+                    <a id="pagoUSDOp2${curso.id}" href="${curso.linkDePago2_USD}" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizá el ${curso.formaDePago2_USD}</a>   
                 </div>
             </div
         `);
