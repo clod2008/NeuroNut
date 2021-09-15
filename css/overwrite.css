@@ -247,6 +247,8 @@ html {
     #PortadaNeuroNut{
       background-image:url('../images/2728.jpg');
       background-position:bottom;
+
+
     }
 
     #PortadaNeuroNutL2{
@@ -286,3 +288,33 @@ html {
 #formaDePago img {
   width: 30%;
 }
+
+@media (max-width: 980px){
+  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    color: #343a40 !important;
+  }
+  .ftco-navbar-light .navbar-nav > .nav-item.active > a {
+    color: #00a990 !important;
+  } 
+  
+}
+
+@media (max-width: 550px){
+  #titleMain {
+    display: flex;
+    align-items: flex-start !important;
+    padding-top: 2em;
+  }
+  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    color: #343a40 !important;
+  }
+  .ftco-navbar-light .navbar-nav > .nav-item.active > a {
+    color: #00a990 !important;
+  } 
+}
+
+.ftco-navbar-light .navbar-toggler {
+  color: #343a40 !important;
+ 
+}
+

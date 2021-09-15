@@ -64,8 +64,8 @@ const cursoTomado  = {
     },
 }
 // comentario 01
-const testimonioNerina ='La Experiencia de UCDM con Rosa marcó en mi vida un antes y un después. Me enseñó a ver las cosas de una manera más amplia, más sana. En los cursos aprendí a conocerme y mirar al otro desde un lugar diferente. La experiencia de Psicoterapia me ayudó a sanar temas muy profundos. Sigo tomando sus cursos, ya que considero que es un camino de ida como dicen... y hay mucho por recorrer... Cada encuentro es una bendición!! GRACIAS GRACIAS GRACIAS'
-const comentario01 = new Comentario('Nerina Stevanelli',`<a href="${cursoTomado.UCDM1.url}" target="_self">Estudiante ${cursoTomado.UCDM1.textLink}</a>`,'active','images/person_1.jpg',testimonioNerina);
+const TESTIMONIO_NERINA ='La Experiencia de UCDM con Rosa marcó en mi vida un antes y un después. Me enseñó a ver las cosas de una manera más amplia, más sana. En los cursos aprendí a conocerme y mirar al otro desde un lugar diferente. La experiencia de Psicoterapia me ayudó a sanar temas muy profundos. Sigo tomando sus cursos, ya que considero que es un camino de ida como dicen... y hay mucho por recorrer... Cada encuentro es una bendición!! GRACIAS GRACIAS GRACIAS'
+const comentario01 = new Comentario('Nerina Stevanelli',`<a href="${cursoTomado.UCDM1.url}" target="_self">Estudiante ${cursoTomado.UCDM1.textLink}</a>`,'active','images/person_1.jpg',TESTIMONIO_NERINA);
 comentario01.crearComentario();
 // comentario 02
 const testimonioJorge = 'Cuando me dí la oportunidad de participar en las ediciones de UCDM dictado por Rosa De Almeida, permití que la vida me muestre el camino que vine a buscar, el mío, el que siempre sabía que existía en mi pero no podía encontrar. Mi camino de crecimiento. Aprendí a acrecentar mi nivel de consciencia, a transformar mi percepción de la realidad y la incorporación de las grandes lecciones que cambiarían mi propia vida.<br><br> '

@@ -13,7 +13,7 @@ const contUCDM1 = {
     buttonId: 'linkPago-UCDM1',
     ariaDisabled: false,
     buttonDisable: '',
-    bifurcadorPagos: 'cursoUCDM1.html#formaDePago',
+    bifurcadorPagos: "/cursoUCDM1.html"+"#"+"formaDePago",
     inicio: 'lunes 6 de septiembre de 2021',
     horario: '10 AM. a 12 AM.',
     metodo: 'ZOOM',
@@ -29,6 +29,8 @@ const contUCDM1 = {
     precio2: '$ 40.000',
     formaDePago2: 'pago anual',
     linkDePago2: '',
+    // Valor Click
+    valorClick: 40000,
     // U$S forma de pago 1
     pago1_USD:  'mensual',
     precio1_USD: 'U$S 30',
@@ -50,7 +52,7 @@ const contUCDM2 = {
     id: 'UCDM2',
     ariaDisabled: false,
     buttonDisable: '',
-    bifurcadorPagos: 'cursoUCDM2.html#formaDePago',
+    bifurcadorPagos: '/cursoUCDM2.html#formaDePago',
     inicio: 'Se dictan los <strong>segundos lunes</strong> de cada mes',
     horario: '6:30 PM. a 9 PM.',
     metodo: 'ZOOM',
@@ -67,6 +69,8 @@ const contUCDM2 = {
     precio2: '$ 9.000',
     formaDePago2: 'pago anual',
     linkDePago2: '',
+    // Valor Click
+    valorClick: 9000,
     // U$S forma de pago 1
     pago1_USD:  'por mes',
     precio1_USD: 'U$S 15',
@@ -88,8 +92,8 @@ const contNeuro = {
     id: 'NeuroNut',
     ariaDisabled: false,
     buttonDisable: '',
-    bifurcadorPagos: 'cursoNeuroNut.html#formaDePago',
-    inicio: 'Octubre 2021',
+    bifurcadorPagos: '/cursoNeuroNut.html#formaDePago',
+    inicio: 'Jueves 28 de octubre de 2021',
     horario: 'de 6 PM. a 9 PM.',
     metodo: 'ZOOM',
     duracion: '3 meses',
@@ -104,6 +108,8 @@ const contNeuro = {
     precio2: '$ 18.000',
     formaDePago2: 'pago total (3 cuotas)',
     linkDePago2: 'https://mpago.la/1zh2fLr',
+    // Valor Click
+    valorClick: 18000,
     // U$S forma de pago 1
     pago1_USD:  'por cada cuota',
     precio1_USD: 'U$S 40',
@@ -125,8 +131,8 @@ const contNeuroL2 = {
     id: 'NeuroNutL2',
     ariaDisabled: false,
     buttonDisable: '',
-    bifurcadorPagos: 'cursoNeuroNutL2.html#formaDePago',
-    inicio: '7 de octubre 2021<br><strong>Se dicta el primer y tercer jueves de cada mes</strong>',
+    bifurcadorPagos: '/cursoNeuroNutL2.html#formaDePago',
+    inicio: 'Noviembre 2021<br><strong>Se dicta el primer y tercer jueves de cada mes</strong>',
     horario: 'de 6 PM. a 9 PM.',
     metodo: 'ZOOM',
     duracion: '6 meses',
@@ -141,6 +147,8 @@ const contNeuroL2 = {
     precio2: '$ 28.000',
     formaDePago2: 'pago anual',
     linkDePago2: 'https://mpago.la/16doSGo',
+    // Valor Click
+    valorClick: 28000,
     // U$S forma de pago 1
     pago1_USD:  'mensuales',
     precio1_USD: 'U$S 28',
@@ -170,6 +178,11 @@ const curseInfo = ( curso )=>{
     duracion.innerHTML = curso.duracion;
 }
 
+
+// onclick ejecuta la fun delay(${curso.linkDePago2_USD})
+
+// <!-- <a id="comprarDestacado${curso.id}" href="${curso.bifurcadorPagos}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}">Comprá este curso</a> --> 
+// 
 
 
 
@@ -201,7 +214,17 @@ const crearCursoDestacado = (curso)=> {
                     </div>
             </div>
             <div class="d-flex justify-content-center align-items-center">
-                    <a id="comprarDestacado${curso.id}" href="${curso.bifurcadorPagos}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}">Comprá este curso</a>   
+                <a  id="comprarDestacado${curso.id}" 
+                    href="${curso.bifurcadorPagos}" 
+                    class="btn btn-primary ${curso.buttonDisable}" 
+                    tabindex="-1" 
+                    role="button" 
+                    aria-disabled="${curso.ariaDisabled}"
+                    onclick="gtag('event', 'click', { 'event_category': 'pagarCurso', 'event_label': '${curso.buttonId}', 'value': '${curso.valorClick}'});"
+                    
+                >
+                Comprá este curso
+                </a>
             </div>
             <div class="d-flex justify-content-center align-items-center">
                 <img class="mercadoPagoImg img-fluid col-4 mt-3 mb-3" src="./images/SVG/mercadoPagoCjaH.svg" alt="">
@@ -339,6 +362,7 @@ const crearPreciosPP = (curso)=> {
         }
 
 }
+
 
 
     
