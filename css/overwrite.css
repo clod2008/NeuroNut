@@ -289,13 +289,19 @@ html {
   width: 30%;
 }
 
+#learnMore{
+  display: none;
+  
+}
+
 @media (max-width: 980px){
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
     color: #343a40 !important;
   }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
     color: #00a990 !important;
-  } 
+  }
+
   
 }
 
@@ -310,11 +316,36 @@ html {
   }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
     color: #00a990 !important;
-  } 
+  }
+  #learnMore{
+    display: block !important;
+    
+  }
+
+  #learnMore button{
+    background-color: #00a990;
+  
+  }
+
+  #learnMore button a {
+    color: #f8f9fa;
+    
+  }
+
+  /* #cont{
+    scroll-margin-top: 9rem;
+  } */
+
+  .ftco-navbar-light .navbar-toggler {
+    color: #343a40 !important;
+  
+  }
+
+  .navbar-brand  {
+    max-width: 80px !important;
+    
+  }
+
 }
 
-.ftco-navbar-light .navbar-toggler {
-  color: #343a40 !important;
- 
-}
 

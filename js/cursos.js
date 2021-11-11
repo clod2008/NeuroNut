@@ -50,6 +50,7 @@ const contUCDM2 = {
     title: 'Un Curso de Milagros<br>Estudiantes avanzados',
     instructor: 'LIC. ROSA DE ALMEIDA',
     id: 'UCDM2',
+    buttonId: 'linkPago-UCDM2',
     ariaDisabled: false,
     buttonDisable: '',
     bifurcadorPagos: '/cursoUCDM2.html#formaDePago',
@@ -90,6 +91,7 @@ const contNeuro = {
     title: 'Creando un Nuevo Sendero 1<br><br> ',
     instructor: 'LIC. ROSA DE ALMEIDA',
     id: 'NeuroNut',
+    buttonId: 'linkPago-Senderos-1',
     ariaDisabled: false,
     buttonDisable: '',
     bifurcadorPagos: '/cursoNeuroNut.html#formaDePago',
@@ -129,6 +131,7 @@ const contNeuroL2 = {
     title: 'Creando un Nuevo Sendero 2<br><br> ',
     instructor: 'LIC. ROSA DE ALMEIDA',
     id: 'NeuroNutL2',
+    buttonId: 'linkPago-Senderos-2',
     ariaDisabled: false,
     buttonDisable: '',
     bifurcadorPagos: '/cursoNeuroNutL2.html#formaDePago',
@@ -169,7 +172,8 @@ const   cursosVihgentes = document.getElementById('cursosVihgentes'),
         inicio = document.querySelector('#inicio'),
         horario = document.querySelector('#horario'),
         metodo = document.querySelector('#metodo'),
-        duracion = document.querySelector('#duracion');
+        duracion = document.querySelector('#duracion'),
+        learMore = document.querySelector('#learnMore');
 
 const curseInfo = ( curso )=>{
     inicio.innerHTML = curso.inicio;
@@ -258,7 +262,16 @@ const crearCursoDestacado = (curso)=> {
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-center align-items-center">
-                                        <a id="comprarCurso${curso.id}" href="${curso.bifurcadorPagos}" class="btn btn-primary ${curso.buttonDisable}" tabindex="-1" role="button" aria-disabled="${curso.ariaDisabled}">Comprá este curso</a>
+                                        <a 
+                                            id="comprarCurso${curso.id}" 
+                                            href="${curso.bifurcadorPagos}" 
+                                            class="btn btn-primary ${curso.buttonDisable}" 
+                                            tabindex="-1" 
+                                            role="button" 
+                                            aria-disabled="${curso.ariaDisabled}"
+                                            onclick="gtag('event', 'click', { 'event_category': 'pagarCurso', 'event_label': '${curso.buttonId}', 'value': '${curso.valorClick}'});"
+                                        >
+                                        Comprá este curso</a>
                                     </div>
                                     <div class="d-flex justify-content-center align-items-center">
                                         <img class="mercadoPagoImg img-fluid col-4 mt-3 mb-3" src="./images/SVG/mercadoPagoCjaH.svg" alt="">
@@ -269,23 +282,6 @@ const crearCursoDestacado = (curso)=> {
         cursosVihgentes.append(cursoItem)
 
     }
-
-// Opciones de pago
-/*
-    <div class="mt-3">
-        <ul class="d-flex justify-content-between mt-2">
-            <li>Pago único</li>
-            <li class="price">$ 3500</li>
-        </ul>
-        <div class="d-flex justify-content-center align-items-center">
-            <a href="#" class="btn btn-primary mb-3 mt-2" tabindex="-1" role="button" aria-disabled="" target="_blank">Realizar Pago único</a>   
-        </div>
-    </div>
-
-    <button><a href="./cursoNeuroNutL2.html#formaDePago">pagar</a></button>
-
-*/
-
 
 const crearPreciosML = (curso)=> {
     if(curso.pago1 == null ){
