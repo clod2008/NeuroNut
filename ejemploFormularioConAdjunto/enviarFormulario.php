@@ -47,6 +47,7 @@ function form_mail($sPara, $sAsunto, $sTexto, $sDe) {
 }
 
 // Cambia aqui el email. Revisa los nombres de los campos de email y asunto según el video
+// https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbUhzVlpyX2pkeXcyQTZ3MGJWX0pNcjRIbGV1d3xBQ3Jtc0trNktuOHlKUnhxSDloS1JEY1RsRFI3MzFORW9lUzdSY3ZSVExlZ013YXIydzR0em4ybllFeGhVNlBPOXUxbU44UnJaLVpncmlGQ0lJZ1UxZ1JZQXhwLXJrakNjbXdwX0RieHF5c0lnMk5oTW1VbUdvSQ&q=https%3A%2F%2Fwww.formaciongrafica.net%2FlaboratorioWeb%2FformulariosDeContactoConAdjunto%2FejemploFormularioConAdjunto.zip&v=tRQrHy5t-cQ
 // https://www.youtube.com/formaciongrafica
 if (form_mail("roxy.966@live.com.ar", $_POST[asunto],
     "-- RESERVA -- Formulario Portada sitio NeuroNut\n\n", $_POST[email]))
